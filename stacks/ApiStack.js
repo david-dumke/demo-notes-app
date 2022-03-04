@@ -21,6 +21,7 @@ export default class ApiStack extends sst.Stack {
                 "POST   /notes": "src/note/create.main",
                 "PUT    /notes/{id}": "src/note/update.main",
                 "GET    /notes/{id}": "src/note/get.main",
+                "DELETE /notes/{id}": "src/note/delete.main",
             }
         });
 
