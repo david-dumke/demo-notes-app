@@ -17,9 +17,10 @@ export default class ApiStack extends sst.Stack {
                 }
             },
             routes: {
-                "POST   /notes": "src/note/create.main",
-                "GET    /notes/{id}": "src/note/get.main",
                 "GET    /notes": "src/note/list.main",
+                "POST   /notes": "src/note/create.main",
+                "PUT    /notes/{id}": "src/note/update.main",
+                "GET    /notes/{id}": "src/note/get.main",
             }
         });
 
